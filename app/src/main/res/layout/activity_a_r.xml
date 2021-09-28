@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ARActivity"
+    android:background="@color/backgroundLightGreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.google.ar.sceneform.ArSceneView
+            android:id="@+id/arView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/arSceneView_height" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <Button
+                        android:id="@+id/lastStep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zurück"
+                        android:backgroundTint="@color/logoGreen"
+                        android:textColor="@color/textLightGrey"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:layout_marginRight="@dimen/standard_margin"
+                        android:layout_marginBottom="@dimen/bigger_margin"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:textSize="@dimen/standard_textSize"/>
+
+                    <Button
+                        android:id="@+id/nextStep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weiter"
+                        android:backgroundTint="@color/logoGreen"
+                        android:textColor="@color/textLightGrey"
+
+                        android:layout_marginBottom="@dimen/bigger_margin"
+                        android:layout_marginTop="@dimen/standard_margin"
+                        android:textSize="@dimen/standard_textSize"
+                        android:layout_marginRight="@dimen/standard_margin"
+                        android:layout_marginLeft="@dimen/bigger_margin"/>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/instructionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/scanQR_Code"
+                    android:textAlignment="center"
+                    android:textColor="@color/textLightGrey"
+                    android:textSize="@dimen/standard_textSize"/>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

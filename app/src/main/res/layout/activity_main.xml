@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backgroundLightGreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hauptmenu"
+        android:textSize="@dimen/header_TextSize"
+        android:layout_marginBottom="@dimen/bigger_margin"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/bigger_margin"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Starten"
+            android:layout_marginBottom="@dimen/bigger_margin"
+            android:textSize="@dimen/standard_textSize"
+            android:textColor="@color/textLightGrey"/>
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Einstellungen"
+            android:layout_marginBottom="@dimen/bigger_margin"
+            android:textSize="@dimen/standard_textSize"
+            android:textColor="@color/textLightGrey"/>
+
+        <Button
+            android:id="@+id/informationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App Informationen"
+            android:textSize="@dimen/standard_textSize"
+            android:textColor="@color/textLightGrey"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

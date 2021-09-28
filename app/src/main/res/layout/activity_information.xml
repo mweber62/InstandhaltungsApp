@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformationActivity"
+    android:background="@color/backgroundLightGreen">
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Information"
+        android:textSize="@dimen/header_TextSize"
+        android:textColor="@color/textLightGrey"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/bigger_margin"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerTextView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/bigger_margin"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Informationen zu dieser App: "
+                    android:textSize="@dimen/standard_textSize"
+                    android:textStyle="bold"
+                    android:textColor="@color/textLightGrey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textLightGrey"
+                    android:textSize="@dimen/standard_textSize"
+                    android:text="@string/aboutTheApp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/bigger_margin"
+                android:layout_below="@+id/line1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ablauf der App: "
+                    android:textSize="@dimen/standard_textSize"
+                    android:textStyle="bold"
+                    android:textColor="@color/textLightGrey"
+                    android:layout_marginBottom="@dimen/small_margin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textLightGrey"
+                    android:textSize="@dimen/standard_textSize"
+                    android:text="@string/appProcedure_1"
+                    android:layout_marginBottom="@dimen/small_margin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textLightGrey"
+                    android:textSize="@dimen/standard_textSize"
+                    android:text="@string/appProcedure_2"
+                    android:layout_marginBottom="@dimen/small_margin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textLightGrey"
+                    android:textSize="@dimen/standard_textSize"
+                    android:text="@string/appProcedure_3"
+                    android:layout_marginBottom="@dimen/small_margin"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/backToStartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start-Fenster"
+                android:layout_below="@id/line2"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

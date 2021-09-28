@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- standard Dimens-->
+
+    <dimen name="header_TextSize">25sp</dimen>
+    <dimen name="standard_textSize">15sp</dimen>
+    <dimen name="standard_margin">15dp</dimen>
+    <dimen name="bigger_margin">30dp</dimen>
+    <dimen name="small_margin">10dp</dimen>
+
+
+    <!-- MainActivity Dimens -->
+    <dimen name="qrCodeScannerView_height">300dp</dimen>
+    <dimen name="qrCodeScannerView_width">300dp</dimen>
+    <dimen name="center_margin">50dp</dimen>
+
+
+    <!-- MachineInfoActivity Dimens -->
+
+
+
+    <!--ARActivity Dimens -->
+    <dimen name="arSceneView_height">400dp</dimen>
+    <dimen name="nextStep_marginRight">40dp</dimen>
+
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MachineInfoActivity"
+    android:background="@color/backgroundLightGreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Machinen Information"
+        android:textSize="@dimen/header_TextSize"
+        android:textColor="@color/textLightGrey"
+        android:id="@+id/headerTV"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/standard_margin"
+        android:paddingTop="@dimen/standard_margin"
+        android:layout_below="@id/headerTV"
+        android:background="@color/backgroudLightGreen_second">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginTop="@dimen/standard_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mIDTV"
+                    android:textSize="@dimen/standard_textSize"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/machineIDTextView"
+                    android:textSize="@dimen/standard_textSize"
+                    android:layout_marginLeft="@dimen/small_margin">
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/standard_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manufacturerTV"
+                    android:textSize="@dimen/standard_textSize"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/manufacturerTextView"
+                    android:textSize="@dimen/standard_textSize"
+                    android:layout_marginLeft="@dimen/small_margin">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/standard_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mNameTV"
+                    android:textSize="@dimen/standard_textSize"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/machineNameTextView"
+                    android:textSize="@dimen/standard_textSize"
+                    android:layout_marginLeft="@dimen/small_margin">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/standard_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mtypeTV"
+                    android:textSize="@dimen/standard_textSize"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/machineTypeTextView"
+                    android:textSize="@dimen/standard_textSize"
+                    android:layout_marginLeft="@dimen/small_margin">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/standard_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/commIntTV"
+                    android:textSize="@dimen/standard_textSize"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/communicationInterfaceTextView"
+                    android:textSize="@dimen/standard_textSize"
+                    android:layout_marginLeft="@dimen/small_margin">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/standard_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isProdReqTV"
+                    android:textSize="@dimen/standard_textSize"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/isProductionFileRequiredTextView"
+                    android:textSize="@dimen/standard_textSize"
+                    android:layout_marginLeft="@dimen/small_margin">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isMatReqTV"
+                    android:textSize="@dimen/standard_textSize"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/isMaterialTextView"
+                    android:textSize="@dimen/standard_textSize"
+                    android:layout_marginLeft="@dimen/small_margin">
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/standard_margin"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/valFileName"
+                    android:textSize="@dimen/standard_textSize"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/validFileNameTextView"
+                    android:textSize="@dimen/standard_textSize"
+                    android:layout_marginLeft="@dimen/small_margin">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/standard_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/valFileExtens"
+                    android:textSize="@dimen/standard_textSize"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/validFileExtensionTextView"
+                    android:textSize="@dimen/standard_textSize"
+                    android:layout_marginLeft="@dimen/small_margin">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/standard_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tcpServerAdd"
+                    android:textSize="@dimen/standard_textSize"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tcpServerAdressTextView"
+                    android:textSize="@dimen/standard_textSize"
+                    android:layout_marginLeft="@dimen/small_margin">
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/setupSpinner"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="@dimen/bigger_margin"
+                />
+
+            <Button
+                android:id="@+id/setupAssistentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/logoGreen"
+                android:text="@string/setupAssButton"
+                android:textColor="@color/textLightGrey"
+                android:textSize="@dimen/standard_textSize"
+                android:layout_marginBottom="@dimen/bigger_margin"
+                android:layout_marginTop="@dimen/standard_margin"/>
+
+            <Button
+                android:id="@+id/setupCreaterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/logoGreen"
+                android:text="@string/setupCreaterButton"
+                android:textColor="@color/textLightGrey"
+                android:textSize="@dimen/standard_textSize"
+                android:layout_marginBottom="@dimen/bigger_margin"
+                android:layout_marginTop="@dimen/standard_margin"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

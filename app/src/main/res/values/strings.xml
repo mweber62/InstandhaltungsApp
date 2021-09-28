@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">ARCoreImage</string>
+
+
+    <!-- MachineInfoActivity -->
+    <string name="mIDTV">Machinen-ID: </string>
+    <string name="manufacturerTV">Hersteller: </string>
+    <string name="mNameTV">Machinen-Name: </string>
+    <string name="mtypeTV">Machinen-Typ: </string>
+    <string name="commIntTV">Kommunikations-Interface: </string>
+    <string name="isProdReqTV">Wird Produktionsdatei benötigt?: </string>
+    <string name="isMatReqTV">Wird Material benötigt?: </string>
+    <string name="valFileName">Gültiger Dateiname: </string>
+    <string name="valFileExtens">Gültige Datei-Erweiterung: </string>
+    <string name="tcpServerAdd">Tcp-Server-Address: </string>
+
+    <string name="setupAssButton">Starte Setup-Assistenten</string>
+    <string name="setupCreaterButton">Erstelle neues Setup</string>
+
+
+    <!-- ARActivtiy -->
+    <string name="scanQR_Code">Bitte scannen Sie den QR-Code</string>
+
+
+    <!-- -->
+    <string name="aboutTheApp">Diese App soll beim Einrichten und Einstellen von bestimmten Geräte helfen. Dafür werden Ihnen bestimmte Setup-Assistenten für die Geräte bereitgestellt. Augmented Reality soll
+    Sie dabei unterstützen, um Ihnen die Setup-Schritte leichter und verständlicher zu gestalten.</string>
+    <string name="appProcedure_1">1. Als erstes Scannen Sie die Geräte über den QR-Code, welcher sich an dem Gerät befindet</string>
+    <string name="appProcedure_2">2. Nachdem erfolgreichen scannen, werden Ihnen nun alle Informationen über dieses Gerät angezeigt. Im unteren Bereich des Bildschirms befindet sich
+        ein DropDownMenu in dem Ihnen mögliche Setup-Assistenten zur Auswahl stehen. Wählen Sie dort einen aus und starten Sie das Setup</string>
+    <string name="appProcedure_3">3. Zum Starten des Setups scannen sie nochmal den QR-Code. Sobald der Scan erfolgreich war, werden Ihnen im unteren Bildschrimbereich die einzelnen Setup-Schritte beschrieben.
+    In der Kamera werden Ihnen dazu noch Pfeile angezeigt, die auf den Bereich zeigen, der zu diesem Setup-Schritt gehört</string>
+
+</resources>
